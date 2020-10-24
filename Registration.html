@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<!--
+BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+Version: 1.6.0
+Purchase: https://wrapbootstrap.com/theme/beyondadmin-adminapp-angularjs-mvc-WB06R48S4
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>PPR Pendaftaran</title>
+
+        <meta name="description" content="Dashboard" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+
+        <!--Basic Styles-->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+
+        <!--Fonts-->
+        <link href="../fonts.googleapis.com/css@family=open+sans_3a300italic,400italic,600italic,700italic,400,600,700,300.css" rel="stylesheet" type="text/css">
+        <link href='../fonts.googleapis.com/css@family=roboto_3a400,300.css' rel='stylesheet' type='text/css'>
+
+
+        <!--Beyond styles-->
+        <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/demo.min.css" rel="stylesheet" />
+        <link href="assets/css/typicons.min.css" rel="stylesheet" />
+        <link href="assets/css/animate.min.css" rel="stylesheet" />
+        <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+        <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+        <script src="assets/js/skins.min.js"></script>
+    </head>
+
+    <body>
+        <div class=" page-body">
+            <div class="widget  radius-bordered">
+                <div class="widget-header">
+                    <span class="widget-caption"><b>Pendaftaran</b></span>
+                </div>
+                <div class="widget-body">
+                    <form id="registrationtoggle" method="post" class="form-horizontal">
+
+                        <label><b>Maklumat Pendaftaran</b></label>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Nama Pemohon (Seperti dalam KP) <sup>*</sup></label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" name="firstName"
+                                       required data-bv-notempty-message="Nama perlu di isi" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">No. KP Baru / KP Lama (Awam, Polis, Tentera) <sup>*</sup></label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="kadpengenalan"
+                                       required data-bv-notempty-message="No Kad Pengenalan perlu di isi" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Email<sup>*</sup></label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" name="email"
+                                       required data-bv-notempty-message="Email perlu di isi" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Alamat<sup>*</sup></label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" name="alamat"
+                                       required data-bv-notempty-message="Alamat perlu di isi" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Poskod / Bandar / Negeri<sup>*</sup></label>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control" name="poskod" placeholder="Poskod"
+                                       required data-bv-notempty-message="Poskod perlu di isi" />
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control" name="bandar" placeholder="Bandar"
+                                       required data-bv-notempty-message="Bandar perlu di isi" />
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text" class="form-control" name="negeri" placeholder="Negeri"
+                                       required data-bv-notempty-message="Negeri perlu di isi" />
+                            </div>
+                        </div>
+                        <hr class=" wide" />
+
+                        <label><b>Jenis Permohonan</b></label>
+                        <div class=" form-group">
+                            <div class="row">
+                                <div class="control-group col-lg-4" style="text-align:center">
+                                    <div class="radio">
+                                        <label>
+                                            <input name="form-field-radio" type="radio" class="colored-blueberry">
+                                            <span class="text"> Individu </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class=" control-group col-lg-4" style="text-align:center">
+                                    <div class="radio">
+                                        <label>
+                                            <input name="form-field-radio" type="radio" class="colored-blueberry">
+                                            <span class="text"> Komersial </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class=" wide" />
+
+                        <label><b>Permohonan Komersial Sahaja</b></label>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Nama Syarikat </label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" name="namasyarikat" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Alamat tempat Kerja </label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" name="alamatkerja" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Poskod / Bandar / Negeri</label>
+                            <div class=" row">
+                                <div class="col-xs-2">
+                                    <input type="text" class="form-control" name="poskodkerja" placeholder="Poskod" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="text" class="form-control" name="bandarkerja" placeholder="Bandar" />
+                                </div>
+                                <div class="col-xs-2">
+                                    <input type="text" class="form-control" name="negerikerja" placeholder="Negeri" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">No Telefon Syarikat</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="telsyarikat" />
+                            </div>
+                        </div>
+                        <hr class=" wide" />
+
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Kata Laluan<sup>*</sup></label>
+                            <div class="col-lg-8">
+                                <input type="password" class="form-control" name="katalaluan"
+                                       required data-bv-notempty-message="Kata Laluan perlu di isi" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Sahkan Kata Laluan<sup>*</sup></label>
+                            <div class="col-lg-8">
+                                <input type="password" class="form-control" name="sahkan"
+                                       required data-bv-notempty-message="Kata Laluan perlu di sahkan" />
+                            </div>
+                        </div>
+                        <hr class="wide" />
+                        <div class="registerbox-textbox no-padding-bottom">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" class="colored-primary" required>
+                                    <span class="text darkgray">
+                                        <b>
+                                            Saya dengan ini mengaku bahawa segala maklumat yang diberikan di dalam borang ini adalah benar. Sekiranya didapati maklumat
+                                            yang diberikan adalah palsu dan tidak benar, pihak Kerajaan Negeri Selangor berhak mengambil tindakan undang-undang ke atas
+                                            diri saya.
+                                        </b> 
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <hr class=" wide" />
+
+                        <button type="submit" class="btn btn-blue">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+        <!--Basic Scripts-->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <!--Beyond Scripts-->
+        <script src="assets/js/beyond.min.js"></script>
+        <script src="assets/js/validation/bootstrapvalidator.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('#registrationtoggle').bootstrapValidator({
+                    message: 'This value is not valid',
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    submitHandler: function (validator, form, submitButton) {
+                        // Do nothing
+                    },
+
+                    fields: {
+                        email: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Email perlu di isi'
+                                }
+                            }
+                        },
+                        katalaluan: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Kata Laluan perlu di isi'
+                                }
+                            }
+                        },
+                        sahkan: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Kata Laluan perlu di sahkan'
+                                }
+                            }
+                        },
+                        firstName: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Nama perlu di isi'
+                                }
+                            }
+                        },
+                        kadpengenalan: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'No Kad Pengenalan perlu di isi'
+                                }
+                            }
+                        },
+                        alamat: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Alamat perlu di isi'
+                                }
+                            }
+                        },
+                        poskod: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Poskod perlu di isi'
+                                }
+                            }
+                        },
+                        bandar: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Bandar perlu di isi'
+                                }
+                            }
+                        },
+                        negeri: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Negeri perlu di isi'
+                                }
+                            }
+                        },
+
+                    }
+                })
+            });
+        </script>
+    </body>
+ < !--Body Ends-- >
+</html >

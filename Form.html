@@ -1,0 +1,1006 @@
+﻿<!DOCTYPE html>
+<!--
+BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+Version: 1.6.0
+Purchase: https://wrapbootstrap.com/theme/beyondadmin-adminapp-angularjs-mvc-WB06R48S4
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+ <meta charset="utf-8" />
+    <title>PPR Form</title>
+
+    <meta name="description" content="Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="../fonts.googleapis.com/css@family=open+sans_3a300italic,400italic,600italic,700italic,400,600,700,300.css" rel="stylesheet" type="text/css">
+    <link href='../fonts.googleapis.com/css@family=roboto_3a400,300.css' rel='stylesheet' type='text/css'>
+
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Loading Container -->
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>
+    <!--  /Loading Container -->
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand">
+                        <small>
+                            <img src="assets/img/logo-ppr.png" alt="" />
+                        </small>
+                    </a>
+                </div>
+                <!-- /Navbar Barnd -->
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+                <!-- Account Area and Settings --->
+                <div class="navbar-header pull-right">
+                    <div class="navbar-account">
+                        <ul class="account-area">
+                            <!-- /Account Area -->
+                            <!--Note: notice that setting div must start right after account area list.
+                            no space must be between these elements-->
+                            <!-- Settings -->
+                        </ul><div class="setting">
+                            <a id="btn-setting" title="Setting" href="#">
+                                <i class="icon glyphicon glyphicon-cog"></i>
+                            </a>
+                        </div>
+                        <!-- Settings -->
+                    </div>
+                </div>
+                <!-- /Account Area and Settings -->
+            </div>
+        </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+                <!-- Page Sidebar -->
+                <div class="page-sidebar" id="sidebar">
+                    <!-- Page Sidebar Header-->
+                    <div class="sidebar-header-wrapper">
+                        <input type="text" class="searchinput" />
+                        <i class="searchicon fa fa-search"></i>
+                        <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+                    </div>
+                    <!-- /Page Sidebar Header -->
+                    <!-- Sidebar Menu -->
+                    <ul class="nav sidebar-menu">
+                        <!--Dashboard-->
+                        <li>
+                            <a href="#">
+                                <i class="menu-icon glyphicon glyphicon-home"></i>
+                                <span class="menu-text"> Dashboard </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Page Content -->
+                <div class="page-content">
+                    <!-- Page Header -->
+                    <div class="page-header position-relative">
+                        <div class="header-title">
+                            <h1>
+                                Form
+                            </h1>
+                        </div>
+                        <!--Header Buttons-->
+                        <div class="header-buttons">
+                            <a class="sidebar-toggler" href="#">
+                                <i class="fa fa-arrows-h"></i>
+                            </a>
+                            <a class="refresh" id="refresh-toggler" href="default.htm">
+                                <i class="glyphicon glyphicon-refresh"></i>
+                            </a>
+                            <a class="fullscreen" id="fullscreen-toggler" href="#">
+                                <i class="glyphicon glyphicon-fullscreen"></i>
+                            </a>
+                        </div>
+                        <!--Header Buttons End-->
+                    </div>
+                    <!-- /Page Header -->
+                    <!-- Page Body -->
+                    <div class="page-body">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-xs-12">
+                                <div id="simplewizard" class="wizard" data-target="#simplewizard-steps">
+                                    <ul class="steps">
+                                        <li data-target="#simplewizardstep1" class="active"><span class="step">1</span>Langkah 1<span class="chevron"></span></li>
+                                        <li data-target="#simplewizardstep2"><span class="step">2</span>Langkah 2<span class="chevron"></span></li>
+                                        <li data-target="#simplewizardstep3"><span class="step">3</span>Langkah 3<span class="chevron"></span></li>
+                                        <li data-target="#simplewizardstep4"><span class="step">4</span>Langkah 4<span class="chevron"></span></li>
+                                        <li data-target="#simplewizardstep5"><span class="step">5</span>Langkah 5<span class="chevron"></span></li>
+                                        <li data-target="#simplewizardstep6"><span class="step">6</span>Langkah 6<span class="chevron"></span></li>
+                                        <li data-target="#simplewizardstep7"><span class="step">7</span>Langkah 7<span class="chevron"></span></li>
+                                    </ul>
+                                </div>
+                                <div class="step-content" id="simplewizard-steps">
+
+                                    <div class="step-pane active" id="simplewizardstep1">
+                                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                                        </div>
+                                        <div class="widget  radius-bordered">
+                                            <div class="widget-header">
+                                            </div>
+                                            <div class="widget-body">
+                                                <form id="syaratForm" method="post" class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <div class="col-lg-8">
+                                                            <h5>
+                                                                SYARAT SYARAT PERMOHONAN
+                                                                <br />  i) Warganegara Malaysia
+                                                                <br />  ii) Berumur 18 tahun ke atas dan telah berkeluarga atau mempunyai tanggungan
+                                                                <br />  iii) Pendapatan Seisi keluarga kurang dari RM 3,000.00
+                                                                <br />  iv) Pemohon dan suami/isteri tinggal atau bekerja di Negeri Selangor, dan
+                                                                <br />  v) Pemohon dan suami/isteri tidak memiliki tanah atau rumah dalam daerah atau mukim yang sama di mana PPR tersebut dibina.
+                                                                <br />  vi) Penyewa - penyewa tidak dibenarkan memberi sewaan unit PPR kepada orang lain (sewa atas sewa). Jika ini berlaku maka unit PPR tersebut akan ditarik balik dan
+                                                                <br />      sewaan dibatalkan serta merta.
+                                                                <br />  vii) Tempoh penyewaan di PPR ialah selama 1 tahun dan hanya akan dilanjutkan sekiranya penyewa mempunyai rekod pembayaran yang baik, masih belum memiliki
+                                                                <br />      rumah kekal dan penyewa atau ahli keluarga tiada rekod jenayah.
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="wide" />
+
+                                                    <div class="form-group">
+                                                        <div class="col-lg-8">
+                                                            <h5>Jenis Permohonan</h5>
+                                                            <div class=" row">
+                                                                <!-- checkbox -->
+                                                                <div class="col-lg-4 col-sm-4 col-xs-4">
+                                                                    <div class="checkbox">
+                                                                        <label>
+                                                                            <input type="checkbox" class="colored-blue">
+                                                                            <span class="text">Permohonan Baru</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- checkbox -->
+                                                                <div class="col-lg-4 col-sm-4 col-xs-4">
+                                                                    <div class="checkbox">
+                                                                        <label>
+                                                                            <input type="checkbox" class="colored-blue" data-toggle="#lanjutpenyewaan">
+                                                                            <span class="text">Lanjut Penyewaan</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="wide" />
+
+                                                    <div class=" form-group">
+                                                        <div class=" col-lg-8">
+                                                            <h5>
+                                                                <br /> PERAKUAN PEMOHON
+                                                                <br /> Saya dengan sesungguhnya dan sebenarnya mengaku bahawa saya membuat pengakuan ini dengan kepercayaan bahawa
+                                                                <br /> apa apa maklumat yang diberikan adalah benar. Sekiranya didapti sebarang keterangan yang diberikan adalah palsu
+                                                                <br /> maka pihak Perumahan dan Hartanah Selangor Sdn. Bhd. berhak membatalkan permohonan ini dan mengenakan tindakan
+                                                                <br /> undang undang keatas diri saya.
+                                                                <br />
+                                                            </h5>
+                                                        </div>
+
+                                                        <div class="col-lg-8">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" class="colored-blue" required>
+                                                                    <span class="text">Saya berkata benar.</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br />
+                                                    <hr class="wide" />
+
+                                                    <!--<div class="form-group">
+                                                        <div class="col-lg-8">
+                                                            <button type="submit" class="btn btn-danger">Next</button>
+                                                        </div>-->
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    <div class="step-pane" id="simplewizardstep2">
+                                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                                        </div>
+                                        <div class="widget  radius-bordered">
+                                            <div class="widget-header">
+                                                <span class="widget-caption">Maklumat Pemohon</span>
+                                            </div>
+                                            <div class="widget-body">
+                                                <form id="maklumatForm" method="post" class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Nama Pemohon (Seperti dalam KP) <sup>*</sup></label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" name="firstName" placeholder="First name"
+                                                                   required data-bv-notempty-message="Nama perlu di isi" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">No. KP Baru / KP Lama (Awam, Polis, Tentera) <sup>*</sup></label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" class="form-control" name="kadpengenalan"
+                                                                   required data-bv-notempty-message="No Kad Pengenalan perlu di isi" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Alamat Surat Menyurat <sup>*</sup></label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" name="alamat"
+                                                                   required data-bv-notempty-message="Alamat perlu di isi" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Poskod / Bandar <sup>*</sup></label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" class="form-control" name="poskod" placeholder="Poskod"
+                                                                   required data-bv-notempty-message="Poskod perlu di isi" />
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" class="form-control" name="bandar" placeholder="Bandar"
+                                                                   required data-bv-notempty-message="Bandar perlu di isi" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Negeri <sup>*</sup></label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" class="form-control" name="negeri" placeholder="Negeri"
+                                                                   required data-bv-notempty-message="Negeri perlu di isi" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Alamat tempat Kerja </label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" name="alamatkerja" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">No Telefon Bimbit <sup>*</sup></label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" class="form-control" name="telbimbit"
+                                                                   required data-bv-notempty-message="Telefon Bimbit perlu di isi" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="col-lg-offset-4 col-lg-8">
+                                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="#telpej">
+                                                                Tambah No Telefon
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- These fields will not be validated as long as they are not visible -->
+                                                    <div id="telpej" style="display: none;">
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">No Telefon Pejabat</label>
+                                                            <div class="col-lg-4">
+                                                                <input type="text" class="form-control" name="telefonpejabat" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!--Tarikh Lahir-->
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Tarikh Lahir / Negeri Tempat Lahir <sup>*</sup></label>
+                                                        <div class="col-xs-3">
+                                                            <input type="text" data-mask="99/99/9999" class="form-control" placeholder="DD/MM/YYYY"
+                                                                   required data-bv-notempty-message="Tarikh Lahir perlu di isi" />
+                                                        </div>
+                                                        <!--Negeri Tempat Lahir-->
+                                                        <div class="col-xs-3">
+                                                            <input type="text" class="form-control" name="negerilahir" placeholder="Negeri Lahir"
+                                                                   required data-bv-notempty-message="Negeri Tempat Lahir perlu di isi" />
+                                                        </div>
+                                                    </div>
+
+                                                    <!--Jantina-->
+                                                    <label class="col-lg-4 control-label">Jantina<sup>*</sup></label>
+                                                    <div class="row">
+                                                        <div class="col-xs-4">
+                                                            <div class="radio">
+                                                                <label>
+                                                                    <input name="form-field-radio" type="radio" class="colored-blueberry">
+                                                                    <span class="text">Lelaki</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input name="form-field-radio" type="radio" class="colored-blueberry">
+                                                                <span class="text">Perempuan</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <br />
+
+                                                    <div class="form-group">
+                                                        <!--Kaum-->
+                                                        <label class="col-lg-4 control-label"></label>
+                                                        <div class="col-xs-2">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                    Kaum
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                    <li><a href="#" data-value="melayu">Melayu</a></li>
+                                                                    <li><a href="#" data-value="cina">Cina</a></li>
+                                                                    <li><a href="#" data-value="india">India</a></li>
+                                                                    <li><a href="#" data-value="lainlain">Lain-Lain</a></li>
+                                                                    <li><a href="#" data-value="bumiputera">Bumiputera Sabah / Sarawak</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="col-xs-2">
+                                                            <!--Agama-->
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                    Agama
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                    <li><a href="#" data-value="islam">Islam</a></li>
+                                                                    <li><a href="#" data-value="kristian">Kristian</a></li>
+                                                                    <li><a href="#" data-value="budha">Budha</a></li>
+                                                                    <li><a href="#" data-value="hindu">Hindu</a></li>
+                                                                    <li><a href="#" data-value="agamalain">Lain-Lain</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xs-2">
+                                                            <!--Pekerjaan-->
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                    Pekerjaan
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                    <li><a href="#" data-value="kerajaan">Kerajaan</a></li>
+                                                                    <li><a href="#" data-value="pesarapolis">Pesara Poliss Tentera</a></li>
+                                                                    <li><a href="#" data-value="berniaga">Berniaga</a></li>
+                                                                    <li><a href="#" data-value="swasta">Swasta</a></li>
+                                                                    <li><a href="#" data-value="tidakbekerja">Tidak Bekerja</a></li>
+                                                                    <li><a href="#" data-value="pesarakerajaan">Pesara Kerajaan</a></li>
+                                                                    <li><a href="#" data-value="kerjalain">Lain - Lain</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="wide" />
+
+                                                    <!-- Pasangan -->
+                                                    <div class="form-group">
+                                                        <div class="col-lg-offset-4 col-lg-8">
+                                                            <button type="button" class="btn btn-danger btn-sm" data-toggle="#InfoPasangan">
+                                                                Tambah Maklumat Pasangan
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- These fields will not be validated as long as they are not visible-->
+                                                    <div id="InfoPasangan" style="display: none;">
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">Nama Pasangan (Seperti dalam KP) <sup>*</sup></label>
+                                                            <div class="col-lg-8">
+                                                                <input type="text" class="form-control" name="namapasangan" 
+                                                                      required data-bv-notempty-message="Nama Pasangan perlu di isi" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">No KP Baru / KP Lama (Awam,Polis,Tentera) <sup>*</sup></label>
+                                                            <div class="col-lg-8">
+                                                                <input type="text" class="form-control" name="kppasangan" 
+                                                                       required data-bv-notempty-message="Kad Pengenalan Pasangan perlu di isi"/>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">Alamat Tempat Kerja<sup>*</sup></label>
+                                                            <div class="col-lg-8">
+                                                                <input type="text" class="form-control" name="alamatpasangan" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">Poskod / Bandar <sup>*</sup></label>
+                                                            <div class="col-lg-4">
+                                                                <input type="text" class="form-control" name="poskodpasangan" placeholder=" Poskod"/>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <input type="text" class="form-control" name="bandarpasangan"  placeholder="Bandar"/>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">Negeri <sup>*</sup></label>
+                                                            <div class="col-lg-4">
+                                                                <input type="text" class="form-control" name="negeripasangan" placeholder="Negeri"/>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">No. Telefon Bimbit<sup>*</sup></label>
+                                                            <div class="col-lg-8">
+                                                                <input type="text" class="form-control" name="telpasangan"
+                                                                       required data-bv-notempty-message="No Telefon perlu di isi" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-lg-4 control-label">Kecacatan (Jika Ada)</label>
+                                                            <div class="col-lg-8">
+                                                                <input type="text" class="form-control" name="kecacatanpasangan" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="wide" />
+
+                                                    <!--<div class="form-group">
+                                                        <div class="col-lg-8 col-lg-offset-4">
+                                                            <button type="submit" class="btn btn-danger">Next</button>
+                                                        </div>
+                                                    </div>-->
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-pane" id="simplewizardstep3">
+                                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                                        </div>
+                                        <div class="widget  radius-bordered">
+                                            <div class="widget-header">
+                                                <span class="widget-caption">Maklumat Pendapatan Isi Rumah</span>
+                                            </div>
+                                            <div class="widget-body">
+                                                <form id="pendapatanForm" method="post" class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Pendapatan Pemohon</label>
+                                                        <div class="col-lg-4 input-group">
+                                                            <span class="input-group-addon">RM</span>
+                                                            <input type="text" class="form-control" required>
+                                                            <span class="input-group-addon">.00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Pendapatan Pasangan</label>
+                                                        <div class="col-lg-4 input-group">
+                                                            <span class="input-group-addon">RM</span>
+                                                            <input type="text" class="form-control" required>
+                                                            <span class="input-group-addon">.00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Pendapatan Pemohon dan Pasangan</label>
+                                                        <div class="col-lg-4 input-group">
+                                                            <span class="input-group-addon">RM</span>
+                                                            <input type="text" class="form-control" required>
+                                                            <span class="input-group-addon">.00</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--<div class="form-group">
+        <div class="col-lg-8 col-lg-offset-4">
+            <button type="submit" class="btn btn-danger">Next</button>
+        </div>
+    </div>-->
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-pane" id="simplewizardstep4">
+                                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                                        </div>
+                                        <div class="widget  radius-bordered">
+                                            <div class="widget-header">
+                                                <span class="widget-caption">Status Pemohon</span>
+                                            </div>
+                                            <div class="widget-body">
+                                                <form id="statusForm" method="post" class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <!--Taraf Perkahwinan-->
+                                                        <label class="col-lg-4 control-label"></label>
+                                                        <div class="col-xs-2">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                    Taraf Perkahwinan
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                                                    <li><a href="#" data-value="bujang">Bujang</a></li>
+                                                                    <li><a href="#" data-value="dudajanda">Duda / Janda (Tiada Anak)</a></li>
+                                                                    <li><a href="#" data-value="berkahwin">Berkahwin</a></li>
+                                                                    <li><a href="#" data-value="ibubapatunggal">Ibu / Bapa Tunggal</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Kecacatan (Jika Ada)</label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" name="kecacatankesihatan" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Masalah Kesihatan (Jika Ada)</label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" name="masalahkesihatan" />
+                                                        </div>
+                                                    </div>
+
+                                                    <!--<div class="form-group">
+        <div class="col-lg-8 col-lg-offset-4">
+            <button type="submit" class="btn btn-danger">Next</button>
+        </div>
+    </div>-->
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-pane" id="simplewizardstep5">
+                                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                                        </div>
+                                        <div class="widget  radius-bordered">
+                                            <div class="widget-header">
+                                                <span class="widget-caption">Butiran Semua Anggota Keluarga dan Tanggungan </span>
+                                            </div>
+                                            <div class="widget-body">
+                                                <form id="butiranForm" method="post" class="form-horizontal">
+                                                    <table class="table table-bordered table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Nama Ahli Keluarga / Tanggungan</th>
+                                                                <th>Hubungan</th>
+                                                                <th>Tarikh Lahir</th>
+                                                                <th>No. Surat Beranak / KP</th>
+                                                                <th>Jantina</th>
+                                                                <th>Pendapatan (RM)</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                                <td><input type="text" class="form-control"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <!--<div class="form-group">
+        <div class="col-lg-8">
+            <button type="submit" class="btn btn-danger">Next</button>
+        </div>
+    </div>-->
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-pane" id="simplewizardstep6">
+                                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                                        </div>
+                                        <div class="widget  radius-bordered">
+                                            <div class="widget-header">
+                                                <span class="widget-caption">Maklumat Tempat Tinggal Sekarang</span>
+                                            </div>
+                                            <div class="widget-body">
+                                                <form id="mttForm" method="post" class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <!--Taraf Perkahwinan-->
+                                                        <label class="col-lg-4 control-label"></label>
+                                                        <div class="col-xs-2">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                    Taraf Tempat Tinggal Sekarang
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                                                                    <li><a href="#" data-value="sewa">Sewa</a></li>
+                                                                    <li><a href="#" data-value="setingan">Setingan</a></li>
+                                                                    <li><a href="#" data-value="menumpang">Menumpang</a></li>
+                                                                    <li><a href="#" data-value="kuarters">Kuarters / Rumah Majikan</a></li>
+                                                                    <li><a href="#" data-value="rumahsendiri">Rumah Sendiri</a></li>
+                                                                    <li><a href="#" data-value="ttlain">Lain - Lain</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Alamat<sup>*</sup></label>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" class="form-control" name="alamattt"
+                                                                   required data-bv-notempty-message="Alamat perlu di isi" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Poskod / Bandar <sup>*</sup></label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" class="form-control" name="poskodtt" placeholder="Poskod"
+                                                                   required data-bv-notempty-message="Poskod perlu di isi" />
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" class="form-control" name="bandartt" placeholder="Bandar"
+                                                                   required data-bv-notempty-message="Bandar perlu di isi" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-4 control-label">Negeri <sup>*</sup></label>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" class="form-control" name="negeritt" placeholder="Negeri"
+                                                                   required data-bv-notempty-message="Negeri perlu di isi" />
+                                                        </div>
+                                                    </div>
+
+                                                    <!--<div class="form-group">
+                                                        <div class="col-lg-8 col-lg-offset-4">
+                                                            <button type="submit" class="btn btn-danger">Next</button>
+                                                        </div>
+                                                    </div>-->
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-pane" id="simplewizardstep7">
+                                        <!--<div class="col-lg-12 col-sm-12 col-xs-12">-->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                                <div class="widget  radius-bordered">
+                                                    <div class="widget-header">
+                                                        <span class="widget-caption">Salinan surat / sijil</span>
+                                                    </div>
+                                                    <div class="widget-body">
+                                                        <h5>Salinan Kad Pengenalan Pemohon</h5>
+                                                        <span class="file-input btn btn-azure btn-file">
+                                                            Browse <input type="file" multiple>
+                                                        </span>
+                                                        <h5>Salinan Kad Pengenalan Pasangan</h5>
+                                                        <span class="file-input btn btn-azure btn-file">
+                                                            Browse <input type="file" multiple>
+                                                        </span>
+                                                        <h5>Salinan Sijil Lahir Pemohon</h5>
+                                                        <span class="file-input btn btn-azure btn-file">
+                                                            Browse <input type="file" multiple>
+                                                        </span>
+                                                        <h5>Salinan Sijil Lahir Pasangan</h5>
+                                                        <span class="file-input btn btn-azure btn-file">
+                                                            Browse <input type="file" multiple>
+                                                        </span>
+                                                        <h5>Salinan Penyata Pendapatan Pemohon dan Pasangan</h5>
+                                                        <span class="file-input btn btn-azure btn-file">
+                                                            Browse <input type="file" multiple>
+                                                        </span>
+                                                        <h5>Surat Pengesahan Majikan</h5>
+                                                        <span class="file-input btn btn-azure btn-file">
+                                                            Browse <input type="file" multiple>
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                                <div class="widget  radius-bordered">
+                                                    <div class="widget-header">
+                                                    </div>
+                                                    <div class="widget-body">
+                                                        <h5>Surat Pengesahan Doktor (Jika Berkenaan)</h5>
+                                                        <span class="file-input btn btn-azure btn-file">
+                                                            Browse <input type="file" multiple>
+                                                        </span>
+                                                        <h5>Salinan Surat Nikah / Surat Cerai </h5>
+                                                        <span class="file-input btn btn-azure btn-file">
+                                                            Browse <input type="file" multiple>
+                                                        </span>
+                                                        <h5>Salinan Sijil Kelahiran / Kad Pengenalan Tanggungan </h5>
+                                                        <span class="file-input btn btn-azure btn-file">
+                                                            Browse <input type="file" multiple>
+                                                        </span>
+                                                        <h5>Salinan Bil Elektrik & Bil Air Terkini</h5>
+                                                        <span class="file-input btn btn-azure btn-file">
+                                                            Browse <input type="file" multiple>
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions actions-footer" id="simplewizard-actions">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default btn-sm btn-prev"> <i class="fa fa-angle-left"></i>Prev</button>
+                                            <button type="submit" class="btn btn-default btn-sm btn-next" data-last="Finish">Next<i class="fa fa-angle-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Page Body -->
+                </div>
+                <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+    </div>
+    <!-- Main Container -->
+    <!--Basic Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!--Beyond Scripts-->
+    <script src="assets/js/beyond.js"></script>
+    <script src="assets/js/beyond.min.js"></script>
+
+    <!--Page Related Scripts-->
+    <script src="assets/js/fuelux/wizard/wizard-custom.js"></script>
+    <script src="assets/js/toastr/toastr.js"></script>
+    <script src="assets/js/validation/bootstrapvalidator.js"></script>
+    <script src="assets/js/inputmask/jasny-bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $('#simplewizardinwidget').wizard();
+            $('#simplewizard').wizard();
+            $('#tabbedwizard').wizard().on('finished', function (e) {
+                Notify('Terima Kasih ! Data anda telah disimpan.', 'bottom-right', '5000', 'blue', 'fa-check', true);
+            });
+            $('#WiredWizard').wizard();
+        });
+
+        $(document).ready(function () {
+            $("#syaratForm").bootstrapValidator();
+
+            $('#maklumatForm').bootstrapValidator({
+                message: 'Maklumat tidak sah',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                submitHandler: function (validator, form, submitButton) {
+                    // Do nothing
+                },
+                fields: {
+                    firstName: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Nama perlu di isi'
+                            }
+                        }
+                    },
+                    kadpengenalan: {
+                        validators: {
+                            notEmpty: {
+                                message: 'No Kad Pengenalan perlu di isi'
+                            }
+                        }
+                    },
+                    alamat: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Alamat perlu di isi'
+                            }
+                        }
+                    },
+                    poskod: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Poskod perlu di isi'
+                            }
+                        }
+                    },
+                    bandar: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Bandar perlu di isi'
+                            }
+                        }
+                    },
+                    negeri: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Negeri perlu di isi'
+                            }
+                        }
+                    },
+                    telbimbit: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Nombor telefon perlu di isi'
+                            },
+                            digits: {
+                                message: 'Nombor telefon tidak sah'
+                            }
+                        }
+                    },
+                    negerilahir: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Negeri Kelahiran perlu di isi'
+                            }
+                        }
+                    },
+                    //This fields will be validate when being visible
+                    namapasangan: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Nama Pasangan perlu di isi'
+                            }
+                        }
+                    },
+                    kppasangan: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Kad Pengenalan Pasangan perlu di isi'
+                            }
+                        }
+                    },
+                    telpasangan: {
+                        validators: {
+                            notEmpty: {
+                                message: 'No Telefon Pasangan perlu di isi'
+                            }
+                        }
+                    }
+                }
+            })
+                .find('button[data-toggle]')
+                .on('click', function () {
+                    var $target = $($(this).attr('data-toggle'));
+                    // Show or hide the additional fields
+                    // They will or will not be validated based on their visibilities
+                    $target.toggle();
+                    if (!$target.is(':visible')) {
+                        // Enable the submit buttons in case additional fields are not valid
+                        $('#maklumatForm').data('bootstrapValidator').disableSubmitButtons(false);
+                    }
+                }); 
+            $("#pendapatanForm").bootstrapValidator();
+
+            $("#statusForm").bootstrapValidator();
+
+            $("#butiranForm").bootstrapValidator();
+
+            $("#mttForm").bootstrapValidator({
+                message: 'Maklumat tidak sah',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                submitHandler: function (validator, form, submitButton) {
+                    // Do nothing
+                },
+                fields: {
+                    alamattt: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Alamat perlu di isi'
+                            }
+                        }
+                    },
+                    poskodtt: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Poskod perlu di isi'
+                            }
+                        }
+                    },
+                    bandartt: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Bandar perlu di isi'
+                            }
+                        }
+                    },
+                    negeritt: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Negeri perlu di isi'
+                            }
+                        }
+                    }
+                }
+            })
+                .find('button[data-toggle]')
+                .on('click', function () {
+                    var $target = $($(this).attr('data-toggle'));
+                    // Show or hide the additional fields
+                    // They will or will not be validated based on their visibilities
+                    $target.toggle();
+                    if (!$target.is(':visible')) {
+                        // Enable the submit buttons in case additional fields are not valid
+                        $('#mttForm').data('bootstrapValidator').disableSubmitButtons(false);
+                    }
+                });
+
+        });
+
+        $(".dropdown-menu li a").click(function () {
+            $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+            $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+        });
+    </script>
+
+
+</body>
+</html>
